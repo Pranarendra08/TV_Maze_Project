@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/iv_cast_detail_photo"
+        android:layout_width="126dp"
+        android:layout_height="177dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintStart_toEndOf="@+id/iv_cast_detail_photo"
+        app:layout_constraintTop_toTopOf="@+id/iv_cast_detail_photo"
+        tools:text="Nicholas Strong" />
+
+    <TextView
+        android:id="@+id/tv_character_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toEndOf="@+id/iv_cast_detail_photo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_person_name"
+        tools:text="Phil Bushey" />
+</androidx.constraintlayout.widget.ConstraintLayout>
